@@ -12,22 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('posts','PostsController@index');
+Route::get('posts/{post}','PostsController@show');
 
-Route::get('hello', function() {
-    /*return view('hello', [
-        'name' => 'Alex'
-    ]);*/
-    //return view('hello')->with('name', 'Jon');
-    $tasks = [
-        'add task',
-        'remove task',
-        'update task'
-    ];
-    return view('hello', compact('tasks'));
-});
+Route::get('tasks', 'TasksController@index');
+Route::get('tasks/{task}', 'TasksController@show');
 
-//Route::get('user', 'UserController@index');
+Route::get('/home', 'HomeController@index')->name('home');
