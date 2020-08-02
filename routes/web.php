@@ -17,7 +17,7 @@ Auth::routes();
 Route::get('posts','PostsController@index');
 Route::get('posts/{post}','PostsController@show');
 
-Route::get('tasks', 'TasksController@index');
+Route::get('tasks', 'TasksController@index')->name('tasks.index');
 Route::get('tasks/create', 'TasksController@create');
 Route::post('tasks/publish', 'TasksController@publish');
 Route::get('tasks/success', 'TasksController@success');

@@ -29,5 +29,8 @@
             </div>
         </div>
     {!! Form::close() !!}
+    <a href="/tasks">
+        <button type="button" class="btn btn-dark">< Назад</button>
+    </a>
 </div>
 @endsection

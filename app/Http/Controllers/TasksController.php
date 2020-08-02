@@ -9,8 +9,19 @@ class TasksController extends Controller
 {
     public function index()
     {
-        $tasks = Task::incomplete();
-        return view('tasks.index', compact('tasks'));
+        $column = request('column') ? request('column') : 'id';
+        $direct = request('direct') ? request('direct') : 'desc';
+        $page = request('page') ? request('page') : '1';
+
+        $sort = [
+            'column' => $column,
+            'direct' => $direct,
+            'page' => $page
+        ];
+
+        $tasks = Task::getTasksPage($sort);
+
+        return view('tasks.index', compact('tasks', 'sort'));
     }
 
     public function show($id)
@@ -19,7 +30,7 @@ class TasksController extends Controller
         return view('tasks.show', compact('task'));
     }
 
-    public function  create()
+    public function create()
     {
         return view('tasks.create');
     }

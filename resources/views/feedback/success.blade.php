@@ -10,6 +10,8 @@
             <h1>Успешная операция</h1>
             <p>{{ $message }}</p>
         </div>
-        <a href="{{ $back_url }}"><button type="button" class="btn btn-dark">Назад</button></a>
+        <a href="{{ $back_url }}">
+            <button type="button" class="btn btn-dark">< Назад</button>
+        </a>
     </div>
 @endsection
