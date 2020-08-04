@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="173e815d-d58c-4c4a-a3b3-6c2c6af30950" name="Default Changelist" comment="Добавлена регистрация и авторизация">
+    <list default="true" id="173e815d-d58c-4c4a-a3b3-6c2c6af30950" name="Default Changelist" comment="Не доделана сортировка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback/fail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/fail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedback/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedback/success.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +180,8 @@
       <workItem from="1596199615542" duration="1883000" />
       <workItem from="1596206635778" duration="3991000" />
       <workItem from="1596277439676" duration="44047000" />
-      <workItem from="1596373598955" duration="2718000" />
+      <workItem from="1596373598955" duration="2985000" />
+      <workItem from="1596532739523" duration="2048000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена регистрация и авторизация">
       <created>1596210380771</created>
@@ -202,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596303121161</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Не доделана сортировка">
+      <created>1596376479811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596376479811</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +226,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Добавлена регистрация и авторизация" />
     <MESSAGE value="-шаблоны с индивидуальными стилями&#10;-добавлена работа с задачами" />
-    <option name="LAST_COMMIT_MESSAGE" value="-шаблоны с индивидуальными стилями&#10;-добавлена работа с задачами" />
+    <MESSAGE value="Не доделана сортировка" />
+    <option name="LAST_COMMIT_MESSAGE" value="Не доделана сортировка" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Intentions" timestamp="1596290642340">
@@ -235,10 +238,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596201513752" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1596303134461">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1596376495938">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596303134461" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596376495938" />
     <state x="480" y="254" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596210542163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

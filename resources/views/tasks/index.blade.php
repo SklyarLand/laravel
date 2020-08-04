@@ -12,22 +12,28 @@
                 <?php
                 use Illuminate\Http\Request;
 
-                function getArrowhead(string $column, array $sort)
+                function getArrowhead(string $column)
                 {
                     $arrowhead = '';
-                    if ($sort['column'] === $column) {
+                    if (request('column') === $column) {
                         $arrowhead = '˅';
-                        if ($sort['direct'] === 'asc') {
+                        if (request('direct') === 'asc') {
                             $arrowhead = '˄';
                         }
                     }
                     return $arrowhead;
                 }
+
+                function getPageParam(string $column)
+                {
+                    $direct = (request('column') === $column && request('direct') === 'desc') ? 'asc' : 'desc';
+                    return ['column' => $column, 'direct' => $direct, 'page' => request('page')];
+                }
                 ?>
-                <div class="col-md-1"><a href="{{ route('tasks.index', ['column' => 'id', 'direct' => 'asc', 'page' => request('page')]) }}"># {{ getArrowhead('id', $sort) }}</a></div>
-                <div class="col-md-2"><a href="{{ route('tasks.index', ['column' => 'name', 'direct' => 'asc', 'page' => request('page')]) }}">Пользователь {{ getArrowhead('name', $sort) }}</a></div>
-                <div class="col-md-2"><a href="{{ route('tasks.index', ['column' => 'email', 'direct' => 'asc', 'page' => request('page')]) }}">E-mail {{ getArrowhead('email', $sort) }}</a></div>
-                <div class="col-md-4"><a href="{{ route('tasks.index', ['column' => 'body', 'direct' => 'asc', 'page' => request('page')]) }}">Описание {{ getArrowhead('body', $sort) }}</a></div>
+                <div class="col-md-1"><a href="{{ route('tasks.index', getPageParam('id')) }}"># {{ getArrowhead('id') }}</a></div>
+                <div class="col-md-2"><a href="{{ route('tasks.index', getPageParam('name')) }}">Пользователь {{ getArrowhead('name') }}</a></div>
+                <div class="col-md-2"><a href="{{ route('tasks.index', getPageParam('email')) }}">E-mail {{ getArrowhead('email') }}</a></div>
+                <div class="col-md-4"><a href="{{ route('tasks.index', getPageParam('body')) }}">Описание {{ getArrowhead('body') }}</a></div>
                 <div class="col-md-1">Статус</div>
                 <div class="col-md-2">Редактировано</div>
             </div>
