@@ -44,8 +44,8 @@
                         <div class="col-md-2 border">{{ $task->name }}</div>
                         <div class="col-md-2 border">{{ $task->email }}</div>
                         <div class="col-md-4 border">{{ $task ->body }}</div>
-                        <div class="col-md-1 border" style='text-align: center;' ><input type='checkbox' disabled></div>
-                        <div class="col-md-2 border" style='text-align: center;'><input type='checkbox' disabled></div>
+                        <div class="col-md-1 border" style='text-align: center;' ><input type='checkbox' disabled {{ $task->completed ? 'checked' : '' }}></div>
+                        <div class="col-md-2 border" style='text-align: center;' ><input type='checkbox' disabled {{ $task->edited ? 'checked' : '' }}></div>
                     </div>
                 </a>
             @endforeach
@@ -56,28 +56,6 @@
                     <button type="button" class="btn btn-primary">Создать задачу</button>
                 </a>
                 {{ $tasks->links() }}
-                {{--<div class="container col-lg-6 row" style="">
-                    <?php
-                    /*$pageNumber = $data["page"];
-                    $previosPage = $pageNumber - 1;
-                    $nextPage = $pageNumber + 1;
-                    foreach ($data as $key => $value) {
-                        if (isset($value['row_number']) && $value['row_number'] == $data['count']) {
-                            $nextPage = 0;
-                        }
-                    }
-                    $get = isset($data['sort']) ? '?sort='.$data['sort'].'&direct='.$data['direct'] : '';
-                    //var_dump();
-                    $block = "<h3> $pageNumber </h3>";
-                    if ($previosPage >= 0) {
-                        $block = "<a href='/$previosPage$get'><h3><</h3></a>" . $block;
-                    }
-                    if ($nextPage) {
-                        $block .= "<a href='/$nextPage$get'><h3>></h3></a>";
-                    }
-                    echo  $block;*/
-                    ?>
-                </div>--}}
             </div>
         </div>
     </div>
