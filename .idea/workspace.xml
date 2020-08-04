@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="173e815d-d58c-4c4a-a3b3-6c2c6af30950" name="Default Changelist" comment="Не доделана сортировка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tasks/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +181,7 @@
       <workItem from="1596206635778" duration="3991000" />
       <workItem from="1596277439676" duration="44047000" />
       <workItem from="1596373598955" duration="2985000" />
-      <workItem from="1596532739523" duration="15083000" />
+      <workItem from="1596532739523" duration="15380000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена регистрация и авторизация">
       <created>1596210380771</created>
@@ -222,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596543451289</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Редактирование записей только администратором">
+      <created>1596558623886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596558623886</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +250,8 @@
     <MESSAGE value="Не доделана сортировка" />
     <MESSAGE value="Сортировка и пагинация задач" />
     <MESSAGE value="поля статус и редактировано" />
-    <option name="LAST_COMMIT_MESSAGE" value="поля статус и редактировано" />
+    <MESSAGE value="Редактирование записей только администратором" />
+    <option name="LAST_COMMIT_MESSAGE" value="Редактирование записей только администратором" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Intentions" timestamp="1596290642340">
