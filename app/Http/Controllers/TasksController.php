@@ -46,15 +46,30 @@ class TasksController extends Controller
 
     public function success()
     {
-        $message = 'Новая задача успешно добавлена!';
+        $message = 'Данные о задачах обновлены!';
         $back_url = '/tasks';
         return view('feedback.success', compact('message', 'back_url'));
     }
 
     public function fail()
     {
-        $message = 'Ошибка при добавлении!';
+        $message = 'Ошибка при попытке изменить данные!';
         $back_url = '/tasks';
         return view('feedback.fail', compact('message', 'back_url'));
+    }
+
+    public function update($id, Request $request)
+    {
+        $input = $request->all();
+        $task = Task::find($id);
+        $data = [
+            'body' => $request->body,
+            'completed' => $request->completed ? 1 : 0,
+            'edited' => 1
+        ];
+        if ($task->where('id', $id)->update($data))
+            return redirect('/tasks/success');
+        else
+            return redirect('/task/fail');
     }
 }

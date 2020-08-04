@@ -21,7 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="173e815d-d58c-4c4a-a3b3-6c2c6af30950" name="Default Changelist" comment="Не доделана сортировка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tasks/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +185,7 @@
       <workItem from="1596206635778" duration="3991000" />
       <workItem from="1596277439676" duration="44047000" />
       <workItem from="1596373598955" duration="2985000" />
-      <workItem from="1596532739523" duration="3193000" />
+      <workItem from="1596532739523" duration="15083000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена регистрация и авторизация">
       <created>1596210380771</created>
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596542065232</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="поля статус и редактировано">
+      <created>1596543451289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596543451289</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +246,8 @@
     <MESSAGE value="-шаблоны с индивидуальными стилями&#10;-добавлена работа с задачами" />
     <MESSAGE value="Не доделана сортировка" />
     <MESSAGE value="Сортировка и пагинация задач" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сортировка и пагинация задач" />
+    <MESSAGE value="поля статус и редактировано" />
+    <option name="LAST_COMMIT_MESSAGE" value="поля статус и редактировано" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Intentions" timestamp="1596290642340">

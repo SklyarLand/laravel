@@ -22,6 +22,7 @@ Route::get('tasks/create', 'TasksController@create');
 Route::post('tasks/publish', 'TasksController@publish');
 Route::get('tasks/success', 'TasksController@success');
 Route::get('tasks/fail', 'TasksController@fail');
-Route::get('tasks/{task}', 'TasksController@show');
+Route::get('tasks/{id}', 'TasksController@show');
+Route::post('tasks/{id}/update', 'TasksController@update');
 
 Route::get('/home', 'HomeController@index')->name('home');
