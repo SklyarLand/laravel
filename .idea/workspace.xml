@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="173e815d-d58c-4c4a-a3b3-6c2c6af30950" name="Default Changelist" comment="Не доделана сортировка">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +181,7 @@
       <workItem from="1596277439676" duration="44047000" />
       <workItem from="1596373598955" duration="2985000" />
       <workItem from="1596532739523" duration="15507000" />
-      <workItem from="1596630743722" duration="1105000" />
+      <workItem from="1596630743722" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена регистрация и авторизация">
       <created>1596210380771</created>
@@ -233,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596558727554</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Описание проекта">
+      <created>1596631897714</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596631897714</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +266,8 @@
     <MESSAGE value="поля статус и редактировано" />
     <MESSAGE value="Редактирование записей только администратором" />
     <MESSAGE value="Задачник как базовая страница" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задачник как базовая страница" />
+    <MESSAGE value="Описание проекта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Описание проекта" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Intentions" timestamp="1596290642340">
@@ -271,10 +278,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596201513752" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1596558736757">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1596631932612">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596558736757" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596631932612" />
     <state x="480" y="254" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596210542163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
