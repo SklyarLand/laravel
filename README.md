@@ -7,6 +7,12 @@
 
 Добавлен проект по отображению постов, использующий Vue.
 
+ссылки на приложение: 
+
+Посты: http://laravel-iskritskiy.zzz.com.ua/posts
+
+Задачник: http://laravel-iskritskiy.zzz.com.ua/tasks
+
 ### Новое в проекте
 1. Создание проекта
 2. artisan create и serve
