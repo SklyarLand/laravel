@@ -1960,8 +1960,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['postTitle', 'postBody', 'postDate', 'postId'],
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log(this);
   }
 });
 
@@ -37606,62 +37607,53 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "col-md-4" }, [
+    _c("div", { staticClass: "card mb-4 box-shadow" }, [
+      _c("h5", { staticClass: "card-header" }, [_vm._v(_vm._s(_vm.postTitle))]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _c("p", { staticClass: "card-text" }, [
+          _vm._v(_vm._s(_vm.postBody.slice(0, 100) + "..."))
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "d-flex justify-content-between align-items-center" },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("small", { staticClass: "text-muted" }, [
+              _vm._v(_vm._s(_vm.postDate))
+            ])
+          ]
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-4" }, [
-      _c("div", { staticClass: "card mb-4 box-shadow" }, [
-        _c("img", {
-          staticClass: "card-img-top",
-          attrs: {
-            "data-src":
-              "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail",
-            alt: "Card image cap"
-          }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("p", { staticClass: "card-text" }, [
-            _vm._v(
-              "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "d-flex justify-content-between align-items-center"
-            },
-            [
-              _c("div", { staticClass: "btn-group" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-sm btn-outline-secondary",
-                    attrs: { type: "button" }
-                  },
-                  [_vm._v("View")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-sm btn-outline-secondary",
-                    attrs: { type: "button" }
-                  },
-                  [_vm._v("Edit")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("small", { staticClass: "text-muted" }, [_vm._v("9 mins")])
-            ]
-          )
-        ])
-      ])
+    return _c("div", { staticClass: "btn-group" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-sm btn-outline-secondary",
+          attrs: { type: "button" }
+        },
+        [_vm._v("View")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-sm btn-outline-secondary",
+          attrs: { type: "button" }
+        },
+        [_vm._v("Edit")]
+      )
     ])
   }
 ]

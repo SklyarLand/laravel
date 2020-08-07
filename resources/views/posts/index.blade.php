@@ -17,15 +17,14 @@
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row">
-              <post-component></post-component>
-              <post-component></post-component>
-              <post-component></post-component>
-              <post-component></post-component>
-              <post-component></post-component>
-              <post-component></post-component>
-              <post-component></post-component>
-              <post-component></post-component>
-              <post-component></post-component>
+              @foreach ($posts as $post)
+                  <post-component
+                      post-title="{{ $post->title }}"
+                      post-body="{{ $post->body }}"
+                      post-date="{{ $post->updated_at }}"
+                      post-id="{{ $post->id }}"
+                  ></post-component>
+              @endforeach
           </div>
         </div>
       </div>
