@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -10,7 +11,8 @@ class PostsController extends Controller
     public function index()
     {
         $posts = Post::paginate(9);
-        return view('posts.index',compact('posts'));
+        $currentDate = Carbon::now();
+        return view('posts.index',compact('posts','currentDate'));
     }
 
     public function show($id)

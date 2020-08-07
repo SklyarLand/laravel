@@ -1960,7 +1960,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['postTitle', 'postBody', 'postDate', 'postId'],
+  props: ['title', 'body', 'date', 'id'],
   mounted: function mounted() {
     console.log(this);
   }
@@ -37609,11 +37609,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "col-md-4" }, [
     _c("div", { staticClass: "card mb-4 box-shadow" }, [
-      _c("h5", { staticClass: "card-header" }, [_vm._v(_vm._s(_vm.postTitle))]),
+      _c("h5", { staticClass: "card-header" }, [_vm._v(_vm._s(_vm.title))]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("p", { staticClass: "card-text" }, [
-          _vm._v(_vm._s(_vm.postBody.slice(0, 100) + "..."))
+          _vm._v(_vm._s(_vm.body.slice(0, 100) + "..."))
         ]),
         _vm._v(" "),
         _c(
@@ -37623,7 +37623,7 @@ var render = function() {
             _vm._m(0),
             _vm._v(" "),
             _c("small", { staticClass: "text-muted" }, [
-              _vm._v(_vm._s(_vm.postDate))
+              _vm._v(_vm._s(_vm.date))
             ])
           ]
         )

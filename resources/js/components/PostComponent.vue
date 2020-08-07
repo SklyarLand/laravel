@@ -1,15 +1,15 @@
 <template>
     <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-            <h5 class="card-header">{{postTitle}}</h5>
+            <h5 class="card-header">{{title}}</h5>
             <div class="card-body">
-                <p class="card-text">{{postBody.slice(0,100)+'...'}}</p>
+                <p class="card-text">{{body.slice(0,100)+'...'}}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
-                    <small class="text-muted">{{ postDate }}</small>
+                    <small class="text-muted">{{ date }}</small>
                 </div>
             </div>
         </div>
@@ -19,10 +19,10 @@
 <script>
     export default {
         props: [
-            'postTitle',
-            'postBody',
-            'postDate',
-            'postId'
+            'title',
+            'body',
+            'date',
+            'id'
         ],
         mounted() {
             console.log(this)

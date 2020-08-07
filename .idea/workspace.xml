@@ -27,7 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="173e815d-d58c-4c4a-a3b3-6c2c6af30950" name="Default Changelist" comment="Не доделана сортировка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/PostComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/PostComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +198,7 @@
       <workItem from="1596532739523" duration="15507000" />
       <workItem from="1596630743722" duration="1980000" />
       <workItem from="1596731422812" duration="1518000" />
-      <workItem from="1596796913919" duration="10448000" />
+      <workItem from="1596796913919" duration="13217000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена регистрация и авторизация">
       <created>1596210380771</created>
@@ -274,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596809251193</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Редактирование readme">
+      <created>1596809557560</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596809557560</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +326,8 @@
     <MESSAGE value="Описание проекта" />
     <MESSAGE value="миграция для пользователей в постах, проба vue" />
     <MESSAGE value="Передача параметров во vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Передача параметров во vue" />
+    <MESSAGE value="Редактирование readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Редактирование readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Intentions" timestamp="1596290642340">
@@ -327,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596201513752" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1596800420204">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1596809562638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596800420204" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596809562638" />
     <state x="480" y="254" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596800251410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
