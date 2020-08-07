@@ -23,9 +23,9 @@
                       body="{{ $post->body }}"
                       date="
                           @if ($currentDate->diffInDays($post->updated_at))
-                              {{ $post->updated_at->isoFormat('M-D-YYYY') }}s
+                              {{ $post->created_at->isoFormat('M-D-YYYY') }}s
                           @else
-                              {{ $post->updated_at->isoFormat('h:mm:ss') }}
+                              {{ $post->created_at->isoFormat('h:mm:ss') }}
                           @endif"
                       id="{{ $post->id }}"
                   ></post-component>
