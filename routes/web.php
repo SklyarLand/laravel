@@ -16,6 +16,7 @@ Auth::routes();
 
 Route::get('posts','PostsController@index');
 Route::get('posts/{post}','PostsController@show');
+Route::get('home/{user}/posts', 'PostsController@getUserPosts');
 
 Route::get('tasks', 'TasksController@index')->name('tasks.index');
 Route::get('tasks/create', 'TasksController@create');

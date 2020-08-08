@@ -1,5 +1,10 @@
 {
     "": "\/",
+    "api.posts.index": "api\/posts",
+    "api.posts.store": "api\/posts",
+    "api.posts.show": "api\/posts\/{post}",
+    "api.posts.update": "api\/posts\/{post}",
+    "api.posts.destroy": "api\/posts\/{post}",
     "login": "login",
     "logout": "logout",
     "register": "register",

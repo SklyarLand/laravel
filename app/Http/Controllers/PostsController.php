@@ -13,6 +13,10 @@ class PostsController extends Controller
         $posts = Post::paginate(9);
         $currentDate = Carbon::now();
         return view('posts.index',compact('posts','currentDate'));
+        /*$posts = Post::all();
+        return response()->json([
+            'posts' => $posts->toArray()
+        ]);*/
     }
 
     public function show($id)

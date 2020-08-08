@@ -69,8 +69,28 @@
 </template>
 
 <script>
+
     export default {
-        name: "HomeComponent",
+        props: [
+            'userId'
+        ],
+        data() {
+            return {
+                posts: []
+            }
+        },
+        methods: {
+            getPost() {
+                console.log(this.userId);
+                axios.post(`/api/posts/search`, { user: this.userId }).then(response => {
+                    this.posts = response.posts;
+                });
+            }
+        },
+        mounted() {
+            console.log('mounted Home');
+            this.getPost();
+        }
     }
 </script>
 
