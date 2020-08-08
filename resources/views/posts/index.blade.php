@@ -23,7 +23,7 @@
                       body="{{ $post->body }}"
                       date="
                           @if ($currentDate->diffInDays($post->updated_at))
-                              {{ $post->created_at->isoFormat('M-D-YYYY') }}s
+                              {{ $post->created_at->isoFormat('M-D-YYYY') }}
                           @else
                               {{ $post->created_at->isoFormat('h:mm:ss') }}
                           @endif"

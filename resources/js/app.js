@@ -5,6 +5,8 @@
  */
 
 require('./bootstrap');
+import route from './route.js';
+console.log(route('home'))
 
 window.Vue = require('vue');
 
@@ -21,6 +23,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('post-component', require('./components/PostComponent.vue').default);
+Vue.component('home-component', require('./components/HomeComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
