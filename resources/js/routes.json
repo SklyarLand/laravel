@@ -1,0 +1,18 @@
+{
+    "": "\/",
+    "api.posts.index": "api\/posts",
+    "api.posts.store": "api\/posts",
+    "api.posts.show": "api\/posts\/{post}",
+    "api.posts.update": "api\/posts\/{post}",
+    "api.posts.destroy": "api\/posts\/{post}",
+    "login": "login",
+    "logout": "logout",
+    "register": "register",
+    "password.request": "password\/reset",
+    "password.email": "password\/email",
+    "password.reset": "password\/reset\/{token}",
+    "password.update": "password\/reset",
+    "password.confirm": "password\/confirm",
+    "tasks.index": "tasks",
+    "home": "home"
+}

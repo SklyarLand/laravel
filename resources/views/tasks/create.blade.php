@@ -44,9 +44,12 @@
                     {!! Form::submit('Подтвердить', ['class' => 'btn btn-primary']) !!}
                 </div>
             </div>
-            <div class="container col-lg-6">
+            <div class="container col-lg-6 row">
                 {!! Form::label('body', 'Введите текст задачи:') !!}
-                {!! Form::textarea('body', '', ['cols' => '60', 'rows' => '15', 'required']) !!}
+                {!! Form::textarea('body', '', ['cols' => '60', 'rows' => '15', 'required', 'class' => 'w-75']) !!}
+            </div>
+            <div class="d-none">
+                {!! Form::text('author_id', Auth::user()->id) !!}
             </div>
         </div>
     @endguest

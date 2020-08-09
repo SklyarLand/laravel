@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::group(['namespace' => 'api', 'as' => 'api.'], function () {
+    Route::post('posts/search', 'PostsController@search');
+    Route::post('tasks/search', 'TasksController@search');
+    Route::resource('posts', 'PostsController', ['except' => ['create', 'edit']]);
+    Route::resource('tasks', 'TasksController', ['except' => ['create', 'edit']]);
+});
