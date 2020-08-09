@@ -18,7 +18,7 @@
         <div class="container">
           <div class="row">
               @foreach ($posts as $post)
-                  <post-component
+                  <post
                       title="{{ $post->title }}"
                       body="{{ $post->body }}"
                       date="
@@ -28,7 +28,7 @@
                               {{ $post->created_at->isoFormat('h:mm:ss') }}
                           @endif"
                       id="{{ $post->id }}"
-                  ></post-component>
+                  ></post>
               @endforeach
           </div>
         </div>
