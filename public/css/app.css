@@ -7,28 +7,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-html {
-    height:100%;
-}
-
-body {
-    height: 100%;
-}
-
-#app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-main {
-    flex: 1 0 auto;
-}
-
-footer {
-    flex: 0 0 auto;
-}
-
 :root {
   --blue: #3490dc;
   --indigo: #6574cd;
