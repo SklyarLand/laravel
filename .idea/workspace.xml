@@ -26,12 +26,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="173e815d-d58c-4c4a-a3b3-6c2c6af30950" name="Default Changelist" comment="Не доделана сортировка">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Info.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/api/TasksController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_09_171001_author_id_in_tasks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/home/items/Task.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Posts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/home/items/Post.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/home/Posts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Tab-Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Tasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/home/Tasks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +194,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alex\OSPanel\domains\laravel\resources\js\components\home\items" />
+      <recent name="C:\Users\alex\OSPanel\domains\laravel\resources\js\components\home" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -208,7 +223,7 @@
       <workItem from="1596630743722" duration="1980000" />
       <workItem from="1596731422812" duration="1518000" />
       <workItem from="1596796913919" duration="24026000" />
-      <workItem from="1596885427595" duration="39015000" />
+      <workItem from="1596885427595" duration="44665000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена регистрация и авторизация">
       <created>1596210380771</created>
@@ -336,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596987795149</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="вывод сообщения если нет постов, кнопка Home">
+      <created>1596989612894</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1596989612894</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +406,8 @@
     <MESSAGE value="команда для генерации маршрутов и роуты для front" />
     <MESSAGE value="данные постов через ajax" />
     <MESSAGE value="вывод постов пользователя в личном кабинете" />
-    <option name="LAST_COMMIT_MESSAGE" value="вывод постов пользователя в личном кабинете" />
+    <MESSAGE value="вывод сообщения если нет постов, кнопка Home" />
+    <option name="LAST_COMMIT_MESSAGE" value="вывод сообщения если нет постов, кнопка Home" />
   </component>
   <component name="WindowStateProjectService">
     <state x="74" y="42" key="#Deployment" timestamp="1596822682806">
@@ -403,6 +426,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1596915561840" />
+    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596992664336">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1596992664336" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1596201513752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

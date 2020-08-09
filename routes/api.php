@@ -21,5 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['namespace' => 'api', 'as' => 'api.'], function () {
     Route::post('posts/search', 'PostsController@search');
+    Route::post('tasks/search', 'TasksController@search');
     Route::resource('posts', 'PostsController', ['except' => ['create', 'edit']]);
+    Route::resource('tasks', 'TasksController', ['except' => ['create', 'edit']]);
 });

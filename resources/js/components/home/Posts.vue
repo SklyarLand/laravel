@@ -27,18 +27,14 @@
         ],
         data: function() {
             return {
-                posts: ['fdfsfds']
+                posts: []
             }
         },
         methods: {
             getPost() {
-                //console.log(this.userId);
-                let result;
                 axios.post(`/api/posts/search`, { user: this.userId }).then(response => {
                     this.posts =  response.data;
-                    console.log(this.posts)
                 });
-                return result;
             }
         },
         mounted() {
