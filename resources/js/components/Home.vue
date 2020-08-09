@@ -4,48 +4,23 @@
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <span data-feather="home">Home</span>
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
+                        <li
+                            v-for="tab in tabs"
+                            v-bind:key="tab"
+                            v-bind:class="['nav-item', { active: currentTab === tab }]"
+                            v-on:click="currentTab = tab"
+                        >
                             <a class="nav-link" href="#">
                                 <span data-feather="file"></span>
-                                Tasks
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="shopping-cart"></span>
-                                Posts
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="users"></span>
-                                Friends
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="bar-chart-2"></span>
-                                Reports
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="layers"></span>
-                                Integrations
+                                {{ tab }}
                             </a>
                         </li>
                     </ul>
-
                 </div>
             </nav>
-
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <component v-bind:is="currentTabComponent" :user-id="userId"></component>
+                <!--<router-view></router-view>&ndash;&gt;
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
                     <h1 class="h2">Dashboard</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
@@ -62,7 +37,7 @@
 
                 <h2>Section title</h2>
                 <div class="table-responsive">
-                </div>
+                </div>-->
             </main>
         </div>
     </div>
@@ -74,22 +49,19 @@
         props: [
             'userId'
         ],
-        data() {
-            return {
-                posts: []
-            }
-        },
-        methods: {
-            getPost() {
-                console.log(this.userId);
-                axios.post(`/api/posts/search`, { user: this.userId }).then(response => {
-                    this.posts = response.posts;
-                });
-            }
-        },
         mounted() {
             console.log('mounted Home');
-            this.getPost();
+        },
+        data() {
+            return {
+                currentTab: "home",
+                tabs: ["home", "posts", "tasks"]
+            }
+        },
+        computed: {
+            currentTabComponent: function() {
+                return "tab-" + this.currentTab.toLowerCase();
+            }
         }
     }
 </script>
@@ -128,7 +100,7 @@
         color: #333;
     }
 
-    .sidebar .nav-link .feather {
+    .sidebar .nav-link {
         margin-right: 4px;
         color: #999;
     }
@@ -137,29 +109,16 @@
         color: #007bff;
     }
 
-    .sidebar .nav-link:hover .feather,
-    .sidebar .nav-link.active .feather {
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
         color: inherit;
-    }
-
-    .sidebar-heading {
-        font-size: .75rem;
-        text-transform: uppercase;
     }
 
     /*
      * Navbar
      */
 
-    .navbar .form-control {
-        padding: .75rem 1rem;
-        border-width: 0;
-        border-radius: 0;
-    }
-
     /*
      * Utilities
      */
-
-    .border-bottom { border-bottom: 1px solid #e5e5e5; }
 </style>

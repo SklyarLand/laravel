@@ -23,9 +23,12 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-/*Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('post-component', require('./components/PostComponent.vue').default);*/
+/*Vue.component('example-component', require('./components/ExampleComponent.vue').default);*/
+Vue.component('tab-posts', require('./components/Posts.vue').default);
+Vue.component('tab-tasks', require('./components/Tasks.vue').default);
+Vue.component('tab-home', require('./components/Tab-Home.vue').default);
 Vue.component('home', require('./components/Home.vue').default);
+Vue.component('post', require('./components/Post.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
