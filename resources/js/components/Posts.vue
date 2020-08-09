@@ -1,15 +1,20 @@
 <template>
-    <!--<div class=" border-bottom">
-        <h1>Ваши посты</h1>
-    </div>-->
     <div id="posts" class="container">
-        <div class=" border-bottom">
+        <div class="border-bottom">
             <h1>Ваши посты</h1>
         </div>
-        <div class="container-fluid">
-            <div v-for="post in posts" class="__post">
+        <div class="container-fluid border-bottom">
+            <div v-if="posts" v-for="post in posts" class="__post">
                 <post v-bind:data-post="post"></post>
             </div>
+            <div v-else>
+                <info info-text="Вы не создали ни одного поста!"></info>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <a href="/posts">
+                <button type="button" class="btn btn-dark">Показать все посты</button>
+            </a>
         </div>
     </div>
 </template>

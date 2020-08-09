@@ -29,6 +29,7 @@ Vue.component('tab-tasks', require('./components/Tasks.vue').default);
 Vue.component('tab-home', require('./components/Tab-Home.vue').default);
 Vue.component('home', require('./components/Home.vue').default);
 Vue.component('post', require('./components/Post.vue').default);
+Vue.component('info', require('./components/Info.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
