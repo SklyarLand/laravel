@@ -30,6 +30,7 @@ Vue.component('home', require('./components/Home.vue').default);
 Vue.component('post', require('./components/home/items/Post.vue').default);
 Vue.component('task', require('./components/home/items/Task.vue').default);
 Vue.component('info', require('./components/Info.vue').default);
+Vue.component('post-component', require('./components/posts/PostComponent').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

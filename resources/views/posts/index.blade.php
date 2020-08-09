@@ -14,23 +14,25 @@
         </div>
       </section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row">
-              @foreach ($posts as $post)
-                  <post
-                      title="{{ $post->title }}"
-                      body="{{ $post->body }}"
-                      date="
-                          @if ($currentDate->diffInDays($post->updated_at))
-                              {{ $post->created_at->isoFormat('M-D-YYYY') }}
-                          @else
-                              {{ $post->created_at->isoFormat('h:mm:ss') }}
-                          @endif"
-                      id="{{ $post->id }}"
-                  ></post>
-              @endforeach
-          </div>
+      <div id="app">
+        <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="row">
+                  @foreach ($posts as $post)
+                      <post-component
+                          title="{{ $post->title }}"
+                          body="{{ $post->body }}"
+                          date="
+                              @if ($currentDate->diffInDays($post->updated_at))
+                                  {{ $post->created_at->isoFormat('M-D-YYYY') }}
+                              @else
+                                  {{ $post->created_at->isoFormat('h:mm:ss') }}
+                              @endif"
+                          id="{{ $post->id }}"
+                      ></post-component>
+                  @endforeach
+              </div>
+            </div>
         </div>
       </div>
 
