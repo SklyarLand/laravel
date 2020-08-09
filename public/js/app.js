@@ -2162,8 +2162,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['dataPost'],
-  name: "Post"
+  props: ['data'],
+  name: "Post",
+  data: function data() {
+    return {
+      date: new Date(this.data['created_at'])
+    };
+  },
+  filters: {
+    formatDate: function formatDate(d) {
+      return [["0".concat(d.getDate()).slice(-2), "0".concat(d.getMonth() + 1).slice(-2), d.getFullYear()].join('.'), ["0".concat(d.getHours()).slice(-2), "0".concat(d.getMinutes()).slice(-2)].join(':')].join(' ');
+    }
+  }
 });
 
 /***/ }),
@@ -38725,7 +38735,7 @@ var render = function() {
           ? _c(
               "div",
               { staticClass: "__post" },
-              [_c("post", { attrs: { "data-post": post } })],
+              [_c("post", { attrs: { data: post } })],
               1
             )
           : _c(
@@ -38869,13 +38879,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card col-sm-12" }, [
     _c("h5", { staticClass: "card-header" }, [
-      _vm._v(_vm._s(_vm.dataPost["title"]))
+      _vm._v(_vm._s(_vm.data["title"]))
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
-      _c("p", { staticClass: "card-text" }, [
-        _vm._v(_vm._s(_vm.dataPost["body"]))
-      ]),
+      _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(_vm.data["body"]))]),
       _vm._v(" "),
       _c(
         "div",
@@ -38884,7 +38892,7 @@ var render = function() {
           _vm._m(0),
           _vm._v(" "),
           _c("small", { staticClass: "text-muted" }, [
-            _vm._v(_vm._s(_vm.dataPost["created_at"]))
+            _vm._v(_vm._s(_vm._f("formatDate")(_vm.date)))
           ])
         ]
       )

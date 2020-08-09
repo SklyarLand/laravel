@@ -1,6 +1,6 @@
 <template>
     <div class="card col-sm-12">
-        <h5 class="card-header"> Создано: {{date | formatDate }}</h5>
+        <h5 class="card-header"> Создано: {{ date | formatDate}}</h5>
         <div class="card-body">
             <p class="card-text">{{data['body']}}</p>
             <div class="d-flex justify-content-between align-items-center">

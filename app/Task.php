@@ -10,7 +10,8 @@ class Task extends Model
         'id',
         'name',
         'email',
-        'body'
+        'body',
+        'author_id'
     ];
 
     public static function incomplete()

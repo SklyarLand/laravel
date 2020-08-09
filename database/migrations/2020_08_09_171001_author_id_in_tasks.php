@@ -14,7 +14,7 @@ class AuthorIdInTasks extends Migration
     public function up()
     {
         Schema::table('tasks', function (Blueprint $table) {
-            $table->integer('author_id');
+            $table->integer('author_id')->default(0);
         });
     }
 

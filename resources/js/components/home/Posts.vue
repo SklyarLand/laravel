@@ -5,7 +5,7 @@
         </div>
         <div class="container-fluid border-bottom">
             <div v-if="posts" v-for="post in posts" class="__post">
-                <post v-bind:data-post="post"></post>
+                <post v-bind:data="post"></post>
             </div>
             <div v-else>
                 <info info-text="Вы не создали ни одного поста!"></info>
